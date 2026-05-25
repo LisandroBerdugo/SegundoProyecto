@@ -34,6 +34,15 @@ export default function HomeUserScreen({ navigation }) {
       <TouchableOpacity style={styles.logoutButton} onPress={cerrarSesion}>
         <Text style={styles.buttonText}>Cerrar sesión</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+  style={styles.button}
+  onPress={() => navigation.navigate('AcercaDe')}
+>
+  <Text style={styles.buttonText}>
+    Acerca de / Licencia
+  </Text>
+</TouchableOpacity>
     </View>
   );
 }
